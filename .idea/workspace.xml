@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43c09ecb-74a4-4b95-a42c-7b5547a9e278" name="Default" comment="找出缺失的整数" />
+    <list default="true" id="43c09ecb-74a4-4b95-a42c-7b5547a9e278" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广度优先搜索/LevelDeOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广度优先搜索/LevelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广度优先搜索/NLevelOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广度优先搜索/NNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/广度优先搜索/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/leetcode/辗转相除法/MaxDivsior.class" beforeDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,54 +19,102 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="564851177">
+    <session id="-310031240">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="3" />
-          <entry key="project.open.time.34" value="1" />
-          <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="2" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="989" />
-          <entry key="txt" value="12" />
+          <entry key="dummy" value="3" />
+          <entry key="java" value="1629" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="989" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="JAVA" value="1629" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
-      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="6" />
+        </counts>
+      </usages-collector>
       <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
       <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            <state relative-caret-position="209">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/广度优先搜索/TreeNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#256#257#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/广度优先搜索/NNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#383#384#0" expanded="true" />
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#474#475#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#638#639#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/广度优先搜索/LevelOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="703">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/广度优先搜索/LevelDeOrder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,19 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MissingNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/广度优先搜索/NLevelOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/回溯算法/LetterCombinations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+            <state relative-caret-position="431">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,25 +135,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/回溯算法/ArraySum.java">
+        <entry file="jar://D:/JDK1.8/src.zip!/java/util/Queue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="47" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -149,6 +182,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -177,12 +211,16 @@
         <option value="$PROJECT_DIR$/src/huisu/ArraySum.java" />
         <option value="$PROJECT_DIR$/src/huisu/letterCasePermutation.java" />
         <option value="$PROJECT_DIR$/src/huisu/LetterCasePermutation.java" />
-        <option value="$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java" />
         <option value="$PROJECT_DIR$/src/动态规划/ClimbStairs.java" />
         <option value="$PROJECT_DIR$/src/动态规划/UniquePaths.java" />
         <option value="$PROJECT_DIR$/src/辗转相除法/MaxDivsior.java" />
-        <option value="$PROJECT_DIR$/src/动态规划/Test.java" />
-        <option value="$PROJECT_DIR$/src/MissingNumber.java" />
+        <option value="$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/LevelOrder.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/node/TreeNode.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/LevelDeOrder.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/NNode.java" />
+        <option value="$PROJECT_DIR$/src/广度优先搜索/NLevelOrder.java" />
       </list>
     </option>
   </component>
@@ -193,10 +231,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1760" />
-    <option name="y" value="159" />
-    <option name="width" value="1940" />
-    <option name="height" value="1090" />
+    <option name="x" value="1912" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -204,7 +242,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
@@ -241,19 +282,18 @@
               <item name="leetcodes" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcodes" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="广度优先搜索" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539069399127" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536588323243" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -267,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MissingNumber">
+  <component name="RunManager" selected="Application.NLevelOrder">
     <configuration name="ClimbStairs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="动态规划.ClimbStairs" />
       <module name="leetcode" />
@@ -307,9 +347,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MissingNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MissingNumber" />
+    <configuration name="NLevelOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="广度优先搜索.NLevelOrder" />
       <module name="leetcode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="广度优先搜索.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,15 +378,15 @@
       <item itemvalue="Application.ClimbStairs" />
       <item itemvalue="Application.UniquePaths" />
       <item itemvalue="Application.MaxDivsior" />
-      <item itemvalue="Application.MissingNumber" />
+      <item itemvalue="Application.NLevelOrder" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MissingNumber" />
+        <item itemvalue="Application.NLevelOrder" />
+        <item itemvalue="Application.LetterCasePermutation" />
         <item itemvalue="Application.MaxDivsior" />
         <item itemvalue="Application.UniquePaths" />
         <item itemvalue="Application.ClimbStairs" />
-        <item itemvalue="Application.LetterCasePermutation" />
       </list>
     </recent_temporary>
   </component>
@@ -366,12 +412,7 @@
       <workItem from="1534384442290" duration="2957000" />
       <workItem from="1534403947857" duration="608000" />
       <workItem from="1534491268018" duration="2858000" />
-      <workItem from="1535814931464" duration="947000" />
-      <workItem from="1535943008619" duration="1228000" />
-      <workItem from="1535977927077" duration="599000" />
-      <workItem from="1536044671347" duration="55000" />
-      <workItem from="1536045249516" duration="650000" />
-      <workItem from="1539064301291" duration="5356000" />
+      <workItem from="1536550130711" duration="9737000" />
     </task>
     <task id="LOCAL-00001" summary="回溯算法">
       <created>1534236360163</created>
@@ -391,12 +432,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57062000" />
+    <option name="totallyTimeSpent" value="57964000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13006397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,17 +445,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4978678" weight="0.44842562" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45860568" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49798927" visible="true" weight="0.31270358" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45819762" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="JProfiler" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4936034" visible="true" weight="0.247557" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5063966" side_tool="true" weight="0.247557" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4966488" weight="0.2549575" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5020107" side_tool="true" weight="0.1858156" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32897604" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -435,8 +476,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="回溯算法" />
-    <MESSAGE value="找出缺失的整数" />
-    <option name="LAST_COMMIT_MESSAGE" value="找出缺失的整数" />
+    <option name="LAST_COMMIT_MESSAGE" value="回溯算法" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/NiukeLearn.java" />
@@ -449,11 +489,10 @@
     <entry file="jar://D:/JDK/JDK1.8/src.zip!/java/lang/CharacterData.java" />
     <entry file="jar://D:/JDK/JDK1.8/src.zip!/java/lang/Character.java" />
     <entry file="file://$PROJECT_DIR$/src/辗转相除法/MaxDivsior.java" />
-    <entry file="file://$PROJECT_DIR$/src/动态规划/Test.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        <state relative-caret-position="152">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,16 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="855">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -518,13 +547,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/leetcode.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissingNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/回溯算法/LetterCasePermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        <state relative-caret-position="209">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/JDK1.8/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/广度优先搜索/LevelDeOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/广度优先搜索/TreeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/广度优先搜索/LevelOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/广度优先搜索/NNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#474#475#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/广度优先搜索/NLevelOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
