@@ -1,8 +1,6 @@
 package 排序算法;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author WilderGao
