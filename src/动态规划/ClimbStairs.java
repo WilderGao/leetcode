@@ -9,6 +9,7 @@ package 动态规划;
  */
 public class ClimbStairs {
     public int solution(int n){
+
         int[] result = new int[n];
         result[0] = 1;
         result[1] = 2;
