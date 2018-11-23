@@ -18,36 +18,37 @@ public class MyArrayList<AnyType> implements Iterable<AnyType> {
     private int theSize;
     private AnyType[] theItems;
 
-    public MyArrayList(){
+    public MyArrayList() {
         doClear();
     }
 
-    public void clear(){
+    public void clear() {
         doClear();
     }
 
     /**
      * 清空数组的操作
      */
-    private void doClear(){
+    private void doClear() {
         theSize = 0;
         ensureCapacity(DEFAULT_CAPACITY);
     }
 
-    public int size(){
+    public int size() {
         return theSize;
     }
 
     /**
      * 判断集合是否为空方法
+     *
      * @return true代表空，false为非空
      */
-    public boolean isEmpty(){
-        return size()==0;
+    public boolean isEmpty() {
+        return size() == 0;
     }
 
-    public AnyType set(int idx, AnyType newVal){
-        if (idx <0 || idx>=size()){
+    public AnyType set(int idx, AnyType newVal) {
+        if (idx < 0 || idx >= size()) {
             throw new ArrayIndexOutOfBoundsException();
         }
         AnyType old = theItems[idx];
@@ -55,42 +56,90 @@ public class MyArrayList<AnyType> implements Iterable<AnyType> {
         return old;
     }
 
-    public AnyType get(int idx){
-        if (idx <0 || idx>=size()){
+    public AnyType get(int idx) {
+        if (idx < 0 || idx >= size()) {
             throw new ArrayIndexOutOfBoundsException();
         }
         return theItems[idx];
     }
 
-    public boolean add(AnyType x){
+    public boolean add(AnyType x) {
+        add(size(), x);
         return true;
     }
 
-    public boolean add(int idx, AnyType x){
-        //明天继续写
-        return true;
+    public void add(int idx, AnyType x) {
+        if (idx > theSize){
+            throw new IndexOutOfBoundsException();
+        }
+        if (theItems.length == size()) {
+            //数组扩容
+            ensureCapacity(size() * 2 + 1);
+        }
+        //元素向后移动
+        for (int i = theSize; i > idx; i--) {
+            theItems[i] = theItems[i - 1];
+        }
+        theItems[idx] = x;
+        theSize++;
+    }
+
+
+    public AnyType remove(int idx) {
+        if (idx > theSize) {
+            throw new IndexOutOfBoundsException();
+        }
+        AnyType removeItem = theItems[idx];
+        for (int i = idx; i < size() - 1; i++) {
+            theItems[i] = theItems[i + 1];
+        }
+        //减小数组长度
+        theSize--;
+        return removeItem;
     }
 
     /**
      * 数组的扩容
+     *
      * @param newCapacity 数组的长度
      */
-    public void ensureCapacity(int newCapacity){
-        if (newCapacity < theSize){
+    public void ensureCapacity(int newCapacity) {
+        if (newCapacity < theSize) {
             return;
         }
 
         AnyType[] old = theItems;
         theItems = (AnyType[]) new Object[newCapacity];
-        for (int i =0;i<size();i++){
+        for (int i = 0; i < size(); i++) {
             theItems[i] = old[i];
         }
     }
 
-
-
     @Override
     public Iterator<AnyType> iterator() {
-        return null;
+        return new ArrayListIterator();
+    }
+
+    private class ArrayListIterator implements java.util.Iterator<AnyType> {
+        int current = 0;
+
+        @Override
+        public boolean hasNext() {
+            return current < size();
+        }
+
+        @Override
+        public AnyType next() {
+            if (!hasNext()) {
+                throw new java.util.NoSuchElementException();
+            }
+            return theItems[current++];
+        }
+
+        @Override
+        public void remove() {
+            MyArrayList.this.remove(--current);
+        }
+
     }
 }
