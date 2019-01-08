@@ -58,9 +58,22 @@ public class FindDuplicate {
         return right;
     }
 
+    public int solution3(int[] nums){
+        int result = 0;
+        for (int i = 0; i < nums.length; i++) {
+            int idx = Math.abs(nums[i])-1;
+            if (nums[idx] < 0) {
+                result = idx + 1;
+            }
+            nums[idx] = -nums[idx];
+        }
+        return result;
+    }
+
 
     public static void main(String[] args) {
         int[] nums = {1, 3, 4, 2, 2};
         System.out.println(new FindDuplicate().solution2(nums));
+        System.out.println(new FindDuplicate().solution3(nums));
     }
 }
