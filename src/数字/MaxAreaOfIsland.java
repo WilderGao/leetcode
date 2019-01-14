@@ -19,8 +19,10 @@ package 数字;
  *  输出结果是 6
  */
 public class MaxAreaOfIsland {
+
     //遇到0就直接pass，遇到1就四方进行递归操作
     //这里用数组的原因是因为java的值传递和引用传递，我用int类型总是变成值传递所以结果老是为0
+
     private static int[] result = {0};
     private static int[] count = {0};
     public int solution(int[][] grid){
@@ -49,17 +51,5 @@ public class MaxAreaOfIsland {
         helper(grid, i+1, j, count, result);
         helper(grid, i, j-1, count, result);
         helper(grid, i, j+1, count, result);
-    }
-
-    public static void main(String[] args) {
-        int[][] grid = {{0,0,1,0,0,0,0,1,0,0,0,0,0},
-                        {0,0,0,0,0,0,0,1,1,1,0,0,0},
-                        {0,1,1,0,1,0,0,0,0,0,0,0,0},
-                        {0,1,0,0,1,1,0,0,1,0,1,0,0},
-                        {0,1,0,0,1,1,0,0,1,1,1,0,0},
-                        {0,0,0,0,0,0,0,0,0,0,1,0,0},
-                        {0,0,0,0,0,0,0,1,1,1,0,0,0},
-                        {0,0,0,0,0,0,0,1,1,0,0,0,0}};
-        System.out.println(new MaxAreaOfIsland().solution(grid));
     }
 }

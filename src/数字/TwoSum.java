@@ -1,5 +1,8 @@
 package 数字;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author WilderGao
  * time 2018-12-02 10:08
@@ -17,6 +20,13 @@ package 数字;
  * 所以返回 [0, 1]
  */
 public class TwoSum {
+
+    /**
+     * 暴力解法
+     * @param nums 数组
+     * @param target 目标值
+     * @return
+     */
     public int[] solution(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length - 1; i++) {
@@ -27,6 +37,26 @@ public class TwoSum {
                     return result;
                 }
             }
+        }
+        return result;
+    }
+
+    /**
+     * 通过map来降低循环次数，以空间换时间
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] solutionUpdate(int[] nums, int target){
+        Map<Integer, Integer> map = new HashMap<>(16);
+        int[] result = new int[2];
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i])){
+                result[0] = map.get(target - nums[i]);
+                result[1] = i;
+                return result;
+            }
+            map.put(target-nums[i], i);
         }
         return result;
     }
