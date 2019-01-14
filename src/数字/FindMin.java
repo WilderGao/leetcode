@@ -1,5 +1,8 @@
 package 数字;
 
+import java.util.ArrayList;
+import java.util.concurrent.ConcurrentLinkedDeque;
+
 /**
  * @author wilder
  * @date 18-12-12 下午7:38
@@ -34,4 +37,5 @@ public class FindMin {
         }
         return Math.min(nums[left], nums[right]);
     }
+
 }
