@@ -18,9 +18,13 @@ public class Huffman {
     private int nodeNum;
 
     private class BinaryNode implements Comparable<BinaryNode> {
-        //这个节点代表的字符串
+        /**
+         * 这个节点代表的字符串
+         */
         String c;
-        //出现的频率
+        /**
+         * 出现的频率
+         */
         int frequent;
         BinaryNode parent;
         BinaryNode left;
@@ -183,5 +187,4 @@ public class Huffman {
         });
         System.out.println("通过哈夫曼编码的最低频率值为:"+huffman.huffmanCost(binaryNodes));
     }
-
 }
