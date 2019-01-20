@@ -16,6 +16,7 @@ package 数字;
 public class FindKthLargest {
     /**
      * 第一种用分治法的思想解决，但是我做的效率有点低，估计是循环处理的不好
+     *
      * @param nums
      * @param k
      * @return
@@ -65,19 +66,52 @@ public class FindKthLargest {
 
     /**
      * 还有一种是基于二叉堆的思想，明天来试着写一下
+     *
      * @param nums
      * @param k
      * @return
      */
-    public int solutionSecond(int[] nums, int k){
-        return 0;
+    public int solutionSecond(int[] nums, int k) {
+        buildHeap(nums, k);
+        //后面继续更改堆
+        for (int i = k; i < nums.length; i++) {
+            if (nums[0] < nums[i]){
+                nums[0] = nums[i];
+                percolateDown(nums, 0, k);
+            }
+        }
+        return nums[0];
     }
 
-    
+    private static void buildHeap(int[] nums, int length) {
+        for (int i = (length-2)/2; i >= 0; i--) {
+            percolateDown(nums, i, length);
+        }
+    }
+
+    private static void percolateDown(int[] nums, int index, int length) {
+        int tmp = nums[index];
+        int childIndex = 2 * index + 1;
+        while (childIndex < length) {
+            if (childIndex + 1 < length && nums[childIndex + 1] < nums[childIndex]){
+                childIndex++;
+            }
+            if (tmp < nums[childIndex]){
+                break;
+            }else {
+                nums[index] = nums[childIndex];
+                index = childIndex;
+                childIndex = childIndex*2+1;
+            }
+        }
+        nums[index] = tmp;
+    }
+
+
     public static void main(String[] args) {
         int[] a = new int[]{3, 2, 3, 1, 2, 4, 5, 5, 6};
         System.out.println(new FindKthLargest().solutionFirst(a, 4));
-        int[] b = new int[]{5, 2, 4, 1, 3, 6, 0};
-        System.out.println(new FindKthLargest().solutionFirst(b, 4));
+        int[] b = new int[]{2,1};
+        System.out.println(new FindKthLargest().solutionSecond(b, 2));
     }
 }
