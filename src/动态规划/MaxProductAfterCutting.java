@@ -8,10 +8,11 @@ package 动态规划;
  */
 public class MaxProductAfterCutting {
     /**
+     * 动态规划的解决方法
      * @param length 绳子原来的长度
      * @return 最大乘积
      */
-    private int solution(int length) {
+    private int solutionFirst(int length) {
         //运用动态规划解决问题的话，采用从下到上的方法，将子问题堆积成为所要求的问题
         //当长度为1时最大肯定的1， 长度为2时最大为2，长度为3时最大为3
         int[] products = new int[length + 1];
@@ -35,7 +36,16 @@ public class MaxProductAfterCutting {
         return products[length];
     }
 
+    /**
+     * 贪婪算法，下次再写
+     * @param length
+     * @return
+     */
+    private int solutionSecond(int length){
+        return 0;
+    }
+
     public static void main(String[] args) {
-        System.out.println(new MaxProductAfterCutting().solution(8));
+        System.out.println(new MaxProductAfterCutting().solutionFirst(8));
     }
 }
