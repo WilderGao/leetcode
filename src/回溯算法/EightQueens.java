@@ -7,7 +7,7 @@ package 回溯算法;
  * description 八皇后问题Java实现
  */
 public class EightQueens {
-    private static final short NUM = 8;
+    private static final short NUM = 8 ;
     private static int COUNT = 0;
 
     public void solution() {

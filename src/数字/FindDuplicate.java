@@ -43,7 +43,7 @@ public class FindDuplicate {
     public int solution2(int[] nums) {
         int left = 0, right = nums.length;
         while (left < right) {
-            int mid = left + (right - left) / 2, cnt = 0;
+            int mid = left + (right - left) >> 1, cnt = 0;
             for (int num : nums) {
                 if (num <= mid) {
                     ++cnt;
@@ -58,10 +58,10 @@ public class FindDuplicate {
         return right;
     }
 
-    public int solution3(int[] nums){
+    public int solution3(int[] nums) {
         int result = 0;
         for (int i = 0; i < nums.length; i++) {
-            int idx = Math.abs(nums[i])-1;
+            int idx = Math.abs(nums[i]) - 1;
             if (nums[idx] < 0) {
                 result = idx + 1;
             }
