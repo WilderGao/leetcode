@@ -37,5 +37,4 @@ public class FortyOne {
             max.add(num);
         }
     }
-
 }

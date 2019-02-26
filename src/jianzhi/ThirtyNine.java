@@ -5,7 +5,7 @@ package jianzhi;
  * @date 19-2-23 下午5:41
  * description 数组中出现超过一半的数字
  */
-public class ThirtyNight {
+public class ThirtyNine {
     private int moreThanHalfNum(int[] nums) {
         //基于快排的思想，如果那个数超过一半，那么当数组按照快排的思路进行排序之后肯定会出现在中间
         if (nums == null) return -1;
@@ -85,6 +85,6 @@ public class ThirtyNight {
 
     public static void main(String[] args) {
         int[] a = new int[]{2, 4, 3, 5, 6, 3, 3, 3};
-        System.out.println(new ThirtyNight().moreThanHalfNumTwo(a));
+        System.out.println(new ThirtyNine().moreThanHalfNumTwo(a));
     }
 }
