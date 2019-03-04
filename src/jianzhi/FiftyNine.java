@@ -11,7 +11,7 @@ import java.util.List;
  * motto : everything is no in vain
  * description 题目一：滑动窗口的最大值
  */
-public class EightyNine {
+public class FiftyNine {
     /**
      * 滑动窗口下最大值
      *
@@ -47,7 +47,7 @@ public class EightyNine {
 
     public static void main(String[] args) {
         int[] nums = new int[]{2, 3, 4, 2, 6, 2, 5, 1};
-        System.out.println(new EightyNine().maxInWindows(nums, 3));
+        System.out.println(new FiftyNine().maxInWindows(nums, 3));
     }
 
 }
