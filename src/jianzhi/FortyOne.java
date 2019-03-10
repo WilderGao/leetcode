@@ -12,6 +12,7 @@ public class FortyOne {
     private TreeSet<Integer> max = new TreeSet<>();
     //把数据分为两部分，左边部分存在大顶堆，右边部分存在小顶堆，保证大顶堆的数都小于小顶堆
     // 那么当个数为奇数时大顶堆的根节点就是中位数，偶数时大顶堆和小顶堆的根节点平均数就是中位数
+
     private void insert(int num){
         //首先判断奇偶,规定偶数放在小顶堆，奇数放在大顶堆
         if (((min.size() + max.size())&1) == 0){

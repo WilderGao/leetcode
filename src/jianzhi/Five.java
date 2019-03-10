@@ -1,5 +1,7 @@
 package jianzhi;
 
+import java.util.Stack;
+
 /**
  * @author wilder
  * @date 19-2-23 下午5:14
@@ -34,5 +36,7 @@ public class Five {
 
     public static void main(String[] args) {
         System.out.println(new Five().replaceBlank("We are coder!".toCharArray()));
+        int[][] a = new int[][]{{1,2,3},{4,5,6}};
+        Stack<Integer> stack = new Stack<>();
     }
 }
