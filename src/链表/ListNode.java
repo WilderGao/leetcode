@@ -22,4 +22,5 @@ public class ListNode {
                 ", next=" + next +
                 '}';
     }
+
 }

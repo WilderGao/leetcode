@@ -1,5 +1,7 @@
 package 回溯算法;
 
+import java.math.BigInteger;
+
 /**
  * @author WilderGao
  * time 2018-12-10 17:19
@@ -72,5 +74,6 @@ public class EightQueens {
 
     public static void main(String[] args) {
         new EightQueens().solution();
+        System.out.println(0x80000000);
     }
 }

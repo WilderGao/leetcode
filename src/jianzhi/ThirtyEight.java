@@ -1,8 +1,9 @@
 package jianzhi;
 
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author wilder
@@ -10,14 +11,14 @@ import java.util.List;
  * description 字符串的全排列
  */
 public class ThirtyEight {
-    private List<String> permutation(char[] str) {
+    private Set<String> permutation(char[] str) {
         if (str == null) return null;
-        List<String> result = new LinkedList<>();
+        Set<String> result = new HashSet<>();
         help(str, 0, result);
         return result;
     }
 
-    private void help(char[] str, int index, List<String> result) {
+    private void help(char[] str, int index, Set<String> result) {
         if (index == str.length) {
             String resultIndex = new String(str);
             result.add(resultIndex);
@@ -37,7 +38,7 @@ public class ThirtyEight {
     }
 
     public static void main(String[] args) {
-        char[] str = new char[]{'a', 'b', 'c','d'};
+        char[] str = new char[]{'a', 'a'};
         System.out.println(new ThirtyEight().permutation(str));
     }
 }
