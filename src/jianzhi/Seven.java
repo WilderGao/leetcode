@@ -51,10 +51,11 @@ public class Seven {
         return root;
 
     }
+
+    class Node {
+        int value;
+        Node left;
+        Node right;
+    }
 }
 
-class Node {
-    int value;
-    Node left;
-    Node right;
-}
