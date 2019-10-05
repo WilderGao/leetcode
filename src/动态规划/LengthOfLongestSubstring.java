@@ -7,10 +7,10 @@ package 动态规划;
  * description leetcode 3
  */
 public class LengthOfLongestSubstring {
-    private int solution(String s) {
+    private static int solution(String s) {
         int maxLength = 0;
         int currentLength = 0;
-        int[] positions = new int[26];
+        int[] positions = new int[256];
         for (int i = 0; i < positions.length; i++) {
             //初始化为-1表示前面没有出现过这个字符
             positions[i] = -1;
@@ -33,5 +33,9 @@ public class LengthOfLongestSubstring {
             maxLength = currentLength;
         }
         return maxLength;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(solution("abcabcbb"));
     }
 }

@@ -12,22 +12,22 @@ public class ReverseList {
         if (head == null) {
             return null;
         }
-        ListNode pNode = head;
-        ListNode pPrev = null, pAfter;
-        if (pNode.next == null) {
-            return pNode;
+        ListNode node = head;
+        ListNode before, after;
+        if (head.next == null) {
+            return node;
         } else {
-            pAfter = pNode.next;
-            while (pNode != null) {
-                pNode.next = pPrev;
-                pPrev = pNode;
-                pNode = pAfter;
-                if (pAfter != null) {
-                    pAfter = pAfter.next;
-                }
+            before = node;
+            node = node.next;
+            before.next = null;
+            while (node != null) {
+                after = node.next;
+                node.next = before;
+                before = node;
+                node = after;
             }
         }
-        return pPrev;
+        return before;
     }
 
     public static void main(String[] args) {

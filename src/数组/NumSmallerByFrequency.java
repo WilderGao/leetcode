@@ -41,7 +41,7 @@ public class NumSmallerByFrequency {
         return num + 1;
     }
 
-    public static int[] solutionUpdate(String[] queries, String[] words) {
+    private static int[] solutionUpdate(String[] queries, String[] words) {
         //分别计算出两个数组的最小字符出现次数
         List<String> queriesList = Arrays.asList(queries);
         List<Integer> queriesResult = queriesList.stream().map(NumSmallerByFrequency::getFirstWordNum).collect(Collectors.toList());

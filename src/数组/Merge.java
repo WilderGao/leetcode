@@ -20,17 +20,7 @@ public class Merge {
             Node node = new Node(interval[0], interval[1]);
             nodes.add(node);
         }
-//        Collections.sort(nodes);
-
-        nodes.sort(new Comparator<Node>() {
-            @Override
-            public int compare(Node o1, Node o2) {
-                if (o1.left > o2.left) {
-                    return 1;
-                }
-                return -1;
-            }
-        });
+        Collections.sort(nodes);
 
         List<Node> result = new ArrayList<>();
         result.add(nodes.get(0));
