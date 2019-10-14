@@ -1,5 +1,7 @@
 package 二叉树;
 
+import sun.reflect.generics.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +14,7 @@ import java.util.List;
 public class GenerateTrees {
     public static List<TreeNode> solution(int n) {
         if (n == 0) return new ArrayList<>();
-        return generateTreeHelp(0, n);
+        return generateTreeHelp(1, n);
     }
 
     private static List<TreeNode> generateTreeHelp(int start, int end) {
@@ -35,5 +37,10 @@ public class GenerateTrees {
             }
         }
         return result;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(solution(3).size());
     }
 }

@@ -22,8 +22,8 @@ public class BuildTree {
             }
         }
         TreeNode node = new TreeNode(preIndex);
-        node.left = buildTreeHelp(preOrder, inOrder, preLeft + 1, i - preLeft, inLeft, i - 1);
-        node.right = buildTreeHelp(preOrder, inOrder, preRight - preLeft + 1, preRight, i + 1, inRight);
+        node.left = buildTreeHelp(preOrder, inOrder, preLeft + 1, preLeft + i - inLeft, inLeft, i - 1);
+        node.right = buildTreeHelp(preOrder, inOrder, preRight - inRight + i + 1, preRight, i + 1, inRight);
         return node;
     }
 

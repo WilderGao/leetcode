@@ -63,9 +63,12 @@ public class CanCross {
         int[] dp = new int[length];
         dp[0] = 0;
         Map<Integer, Set<Integer>> map = new HashMap<>(32);
-        Set<Integer> set = new HashSet<>();
-        set.add(0);
-        map.put(0, set);
+        for (int i = 0; i < length; i++) {
+            Set<Integer> set = new HashSet<>();
+            map.put(i, set);
+        }
+        map.get(0).add(0);
+
         int k = 0;
         for (int i = 1; i < length; i++) {
             while (dp[k] + 1 < stones[i] - stones[k]) {
@@ -74,12 +77,12 @@ public class CanCross {
             for (int j = k; j < i; j++) {
                 int t = stones[i] - stones[j];
                 if (map.get(j).contains(t) || map.get(j).contains(t - 1) || map.get(j).contains(t + 1)) {
-
+                    map.get(i).add(t);
+                    dp[i] = Math.max(t, dp[i]);
                 }
             }
-
         }
-        return false;
+        return dp[length - 1] > 0;
     }
 
 
