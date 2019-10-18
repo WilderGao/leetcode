@@ -41,7 +41,7 @@ public class NextPermutation {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 2, 3};
+        int[] nums = new int[]{1, 2, 4, 3};
         solution(nums);
         for (int num : nums) {
             System.out.print(num + " ");

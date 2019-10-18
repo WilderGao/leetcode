@@ -14,7 +14,7 @@ public class PathSum {
         int currentSum = 0;
         List<List<Integer>> result = new LinkedList<>();
         List<Integer> tmp = new LinkedList<>();
-        if (root == null){
+        if (root == null) {
             return result;
         }
         findPath(result, tmp, currentSum, sum, root);
@@ -37,6 +37,6 @@ public class PathSum {
         if (node.right != null) {
             findPath(result, tmp, currentSum, expectedSum, node.right);
         }
-        tmp.remove(tmp.size());
+        tmp.remove(tmp.size() - 1);
     }
 }
