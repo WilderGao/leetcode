@@ -9,7 +9,7 @@ import java.util.Stack;
  * description leetcode : 二叉搜索树转为双向链表
  */
 public class TreeToDoublyList {
-    public TreeNode solutioin(TreeNode root) {
+    public TreeNode solution(TreeNode root) {
         if (root == null || root.left == null && root.right == null) {
             return root;
         }
@@ -52,6 +52,6 @@ public class TreeToDoublyList {
         left.left = leftLeft;
         left.right = rightLeft;
 
-        TreeNode head = new TreeToDoublyList().solutioin(root);
+        TreeNode head = new TreeToDoublyList().solution(root);
     }
 }

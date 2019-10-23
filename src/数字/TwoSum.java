@@ -23,7 +23,8 @@ public class TwoSum {
 
     /**
      * 暴力解法
-     * @param nums 数组
+     *
+     * @param nums   数组
      * @param target 目标值
      * @return
      */
@@ -43,21 +44,30 @@ public class TwoSum {
 
     /**
      * 通过map来降低循环次数，以空间换时间
+     *
      * @param nums
      * @param target
      * @return
      */
-    public int[] solutionUpdate(int[] nums, int target){
+    public int[] solutionUpdate(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>(16);
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
-            if (map.containsKey(target - nums[i])){
-                result[0] = map.get(target - nums[i]);
-                result[1] = i;
+            map.put(nums[i], i);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            if (map.containsKey(target - nums[i]) && i != map.get(target - nums[i])) {
+                result[0] = i;
+                result[1] = map.get(target - nums[i]);
                 return result;
             }
-            map.put(target-nums[i], i);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{3, 2, 4};
+        int[] result = new TwoSum().solutionUpdate(nums, 6);
+        System.out.println(result[0] + " " + result[1]);
     }
 }
