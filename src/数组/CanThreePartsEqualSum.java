@@ -4,7 +4,7 @@ package 数组;
  * @author WilderGao
  * time 2019-10-27 14:10
  * motto : everything is no in vain
- * description leetcode
+ * description leetcode 1013： 将数组分成和相等的三个部分
  */
 public class CanThreePartsEqualSum {
     public boolean solution(int[] a) {

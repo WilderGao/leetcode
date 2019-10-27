@@ -4,7 +4,7 @@ package 数组;
  * @author WilderGao
  * time 2019-10-27 14:23
  * motto : everything is no in vain
- * description leetcode
+ * description leetcode 66： 加一
  */
 public class PlusOne {
     public int[] solution(int[] digits) {

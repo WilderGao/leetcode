@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author WilderGao
  * time 2019-10-19 14:33
  * motto : everything is no in vain
- * description
+ * description leetcode 976: 三角形的最大周长
  */
 public class LargestPerimeter {
     public int solution(int[] A) {
