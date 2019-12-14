@@ -7,6 +7,14 @@ package 字符串;
  * description leetcode : 给定三个字符串 s1, s2, s3, 验证 s3 是否是由 s1 和 s2 交错组成的
  */
 public class IsInterleave {
+    /**
+     * 用递归方式来解决问题
+     *
+     * @param s1
+     * @param s2
+     * @param s3
+     * @return
+     */
     public boolean solution(String s1, String s2, String s3) {
         if (s1 == null && s2 == null && s3 == null) {
             return true;
