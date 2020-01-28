@@ -30,11 +30,11 @@ public class CanPartitionKSubsets {
         //动态规划维护一个一维数组
         int[] v = new int[k];
         //只有当这个维护的一维数组v里面的值全都等于collect才会返回true
-        return doAction(nums, v, nums.length-1, collect);
+        return doAction(nums, v, nums.length - 1, collect);
     }
 
     private boolean doAction(int[] nums, int[] v, int index, int collect) {
-        if (index == -1){
+        if (index == -1) {
             for (int i : v) {
                 if (i != collect) return false;
             }
@@ -42,9 +42,9 @@ public class CanPartitionKSubsets {
         }
         int num = nums[index];
         for (int i = 0; i < v.length; i++) {
-            if (v[i]+num > collect) continue;
+            if (v[i] + num > collect) continue;
             v[i] += num;
-            if (doAction(nums, v, index-1, collect)) return true;
+            if (doAction(nums, v, index - 1, collect)) return true;
             v[i] -= num;
         }
         return false;
